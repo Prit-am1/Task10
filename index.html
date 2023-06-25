@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First Task</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-image: url("https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-size: auto;
+        background-repeat: no-repeat;
+        margin-top: 0px;
+      }
+      span {
+        background-position: center;
+        background-size: contain;
+        padding: 5px;
+      }
+      .outline {
+        background-color: aliceblue;
+        width: 550px;
+        margin: 15px auto auto auto;
+        padding: 0px 0px 0px 35px;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outline">
+      <span>
+        <h1 style="color: orange; padding: 0px 0px 0px 175px">Book a call</h1>
+        <p>
+          Book a call slot and our representative will call you within 1 hr of
+          selected time
+        </p>
+
+        <hr style="width: 512px" />
+        <br />
+
+        <form action="#" onsubmit="details()" id="first-class">
+          <label for="name">Name:</label><br />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            value=""
+            placeholder="John Doe"
+            required
+            style="width: 512px"
+          /><br />
+          <label for="email">Email:</label><br />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            value=""
+            placeholder="johndoe@gmail.com"
+            required
+            style="width: 512px"
+          /><br />
+          <label for="phone">Phone:</label><br />
+          <input
+            type="tel"
+            name="phone"
+            id="phone"
+            value=""
+            placeholder="+91-9876543210"
+            required
+            style="width: 512px"
+          /><br />
+          <label for="call">Time for call:</label><br />
+          <input
+            type="date"
+            name="call"
+            id="call"
+            value=""
+            placeholder="yyyy-MM-dd"
+            required
+            style="width: 256px"
+          />
+          <input
+            type="time"
+            name="time"
+            id="time"
+            value=""
+            placeholder="HH:mm"
+            required
+            style="width: 248px"
+          /><br />
+          <br />
+          <input
+            type="submit"
+            name="submit"
+            id="submit1"
+            value="GET A CALL"
+            style="width: 516px; color: white; background-color: orange"
+          />
+          <div class="class2"></div>
+        </form>
+      </span>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
